@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+/*ถ้า Import css File เข้ามาแบบนี้จะเป็น Global*/
 import './index.css';
+
+/*ถ้า Import css File ที่มี [Filename].module.css จะใช้ Style ในระดับ Component เท่านั้น ไม่ได้ Global*/
+/*ถ้าจะใช้ Style แบบนี้เวลาสร้างให้ตั้งชื่อ File เป็น [Filename].module.css*/
+//import styles from './index.module.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
